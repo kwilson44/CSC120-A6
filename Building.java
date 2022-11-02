@@ -2,7 +2,8 @@ public class Building {
 
     private String name = "<Name Unknown>";
     private String address = "<Address Unknown>";
-    private int nFloors = 1;
+    protected int nFloors = 1;
+    
 
     public Building(String name, String address, int nFloors) {
         if (name != null) { this.name = name; }
@@ -13,6 +14,8 @@ public class Building {
         this.nFloors = nFloors;
     }
 
+   
+       
     public String getName() {
         return this.name;
     }
@@ -32,6 +35,8 @@ public class Building {
     public static void main(String[] args) {
         Building fordHall = new Building("Ford Hall", "100 Green Street Northampton, MA 01063", 4);
         System.out.println(fordHall);
+
+        
     }
 
 }
